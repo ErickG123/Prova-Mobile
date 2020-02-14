@@ -1,0 +1,80 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Contato
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card-content>
+    <ion-item>
+      <ion-label>E-mail *:</ion-label>
+      <ion-input placeholder="Digite seu email" type="email" [(ngModel)]="conta"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Telefone:</ion-label>
+      <ion-input type="tel"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Assunto:</ion-label>
+      <ion-input placeholder="Informe o assunto" type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Mensagem:</ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-textarea type="text" class="textarea"></ion-textarea>
+    </ion-item>
+
+    <br>
+
+    <ion-checkbox color="primary"></ion-checkbox>
+    <ion-label>Send a copy yourself</ion-label>
+    <br>
+    <ion-checkbox color="primary"></ion-checkbox>
+    <ion-label>Subscribe to our newsletter</ion-label>
+    <br>
+
+    <ion-button color="primary" (click)="logar();" class="alinhamente-botao">Entrar</ion-button>
+    <p>(* Obrigatório preencher)</p>
+
+  </ion-card-content>
+
+  <br><br><br><br>
+
+  <div class="rodape">
+    <br>
+    <p class="corFonte"><b>Links</b></p>
+
+    <p class="borda"><a href="https://www.cps.sp.gov.br/">Centro Paula Souza</a></p>
+
+    <p class="borda"><a href="https://www.vestibulinhoetec.com.br/home/">Vestibulinho</a></p>
+
+    <p class="borda"><a href="https://nsa.cps.sp.gov.br/">Sistema – NSA</a></p>
+
+    <br>
+
+    <p class="corFonte"><b>Contato</b></p>
+    <p class="borda corTxt">Localização</p>
+    <p class="borda corTxt">Rua Ludovico Victório, 2140 Vila</p>
+    <p class="borda corTxt">Habitacional, Barra Bonita - SP, 17340-000</p>
+
+    <br>
+
+    <p class="corFonte"><b>Email</b></p>
+    <p class="borda corTxt a">etecbarrabonita@etecbarrabonita.com.br</p>
+
+    <br>
+
+    <p class="corFonte"><b>Telefone</b></p>
+    <p class="borda corTxt">(14) 3641-1310</p>
+  </div>
+</ion-content>
